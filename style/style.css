@@ -1,151 +1,193 @@
-:root{
-    --blue: #0084fd;
-    --green: #54c688;
-    --red: #fe8a8a;
-    --yellow: #f9c474;
-    --purple: #9692e6;
-    --grey: #333333;
-    
-    --light-blue: #b9ddff;
-    --light-green: #caf0db;
-    --light-red: #fed2d1;
-    --light-yellow: #ffe7c3;
-    --light-purple: #d5d4f4;
+:root {
+  --blue: #0084fd;
+  --green: #54c688;
+  --red: #fe8a8a;
+  --yellow: #f9c474;
+  --purple: #9692e6;
+  --grey: #333333;
 
-    --text-grey: #484c4b;
-    
-    --mobile-standard-padding: 8px 16px;
+  --light-blue: #b9ddff;
+  --light-green: #caf0db;
+  --light-red: #fed2d1;
+  --light-yellow: #ffe7c3;
+  --light-purple: #d5d4f4;
 
+  --text-grey: #484c4b;
+
+  --mobile-standard-padding: 8px 16px;
+  --mobile-text-size: 0.8em;
+  --mobile-line-hight: 1.2rem;
+  --mobile-gap: 16px;
 }
-
-
-
 
 /* ---------------- Generic Stiles ---------------- */
-button{
-    border-radius: 50px;
-    color: white;
-    margin: 1rem 0;
-    cursor: pointer;
-
+button {
+  border-radius: 50px;
+  color: white;
+  margin: 1rem 0;
+  cursor: pointer;
 }
-button *{
-    color: white;
+button * {
+  color: white;
 }
-a{
-    text-decoration: underline;
+a {
+  text-decoration: underline;
+}
+.source,
+.source * {
+  font-size: 0.6rem;
 }
 /* ---------------- Generic Stiles ---------------- */
 
 /* ---------------- Header ---------------- */
-header{
-    background-color: var(--blue);
-    padding: var(--mobile-standard-padding);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+  background-color: var(--blue);
+  padding: var(--mobile-standard-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header *{
-    color: white;
+header * {
+  color: white;
 }
-.header__menu-bars{
-    padding: var(--mobile-standard-padding);
-    margin: 0;
-    margin-right: -16px;
-    background-color: transparent;
+.header__menu-bars {
+  padding: var(--mobile-standard-padding);
+  margin: 0;
+  margin-right: -16px;
+  background-color: transparent;
 }
 /* ---------------- / Header ---------------- */
 /* ---------------- GET DEMO ---------------- */
-.get-demo{
-    padding: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
+.get-demo {
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--mobile-gap);
+  text-align: center;
 }
-.get-demo__element{
-    width: 100%;
-    border-radius: 15px;
-    padding: var(--mobile-standard-padding);
-    overflow: hidden;
+.get-demo__element {
+  width: 100%;
+  border-radius: 15px;
+  padding: var(--mobile-standard-padding);
+  overflow: hidden;
 }
-.get-demo__element--text-align-left{
-    text-align: left;
-}
-
-.get-demo__element__icon{
-    font-size: 5em;
+.get-demo__element--text-align-left {
+  text-align: left;
 }
 
-.get-demo__element__title{
-    font-size: 1.2em;
-    margin: 1rem 0;
-}
-.get-demo__element__text{
-    font-size: 0.8em;
-    line-height: 1.2rem;
-}
-.get-demo__element__img{
-    width: 80%;
-}
-.get-demo__element__img--half-height{
-    margin-bottom: -16px;
-}
-.get-demo__source,
-.get-demo__source *{
-    font-size: .6rem;
+.get-demo__element__icon {
+  font-size: 5em;
 }
 
-
-
+.get-demo__element__title {
+  font-size: 1.2em;
+  margin: 1rem 0;
+}
+.get-demo__element__text {
+  font-size: var(--mobile-text-size);
+  line-height: var(--mobile-line-hight);
+}
+.get-demo__element__img {
+  width: 80%;
+}
+.get-demo__element__img--half-height {
+  margin-bottom: -16px;
+}
+.source,
+.source * {
+  font-size: 0.6rem;
+}
 
 /* ---- Colors ---- */
 /* buttons */
-.get-demo__element__button--blue-bg{
-    background-color: var(--blue);
+.get-demo__element__button--blue-bg {
+  background-color: var(--blue);
 }
 /* / buttons */
 
 /* backgrounds */
-.get-demo__element--light-blue-bg{
-    background-color: var(--light-blue);
+.get-demo__element--light-blue-bg {
+  background-color: var(--light-blue);
 }
-.get-demo__element--light-green-bg{
-    background-color: var(--light-green);
+.get-demo__element--light-green-bg {
+  background-color: var(--light-green);
 }
-.get-demo__element--light-red-bg{
-    background-color: var(--light-red);
+.get-demo__element--light-red-bg {
+  background-color: var(--light-red);
 }
-.get-demo__element--light-yellow-bg{
-    background-color: var(--light-yellow);
+.get-demo__element--light-yellow-bg {
+  background-color: var(--light-yellow);
 }
-.get-demo__element--light-purple-bg{
-    background-color: var(--light-purple);
+.get-demo__element--light-purple-bg {
+  background-color: var(--light-purple);
 }
 /* / backgrounds */
 
-
 /* texts */
-.get-demo__element__text--blue{
-    color: var(--blue);
+.get-demo__element__text--blue {
+  color: var(--blue);
 }
 .get-demo__element__text--green,
-.get-demo__element__icon--green{
-    color: var(--green);
+.get-demo__element__icon--green {
+  color: var(--green);
 }
 .get-demo__element__text--red,
-.get-demo__element__icon--red{
-    color: var(--red);
+.get-demo__element__icon--red {
+  color: var(--red);
 }
 .get-demo__element__text--yellow,
-.get-demo__element__icon--yellow{
-    color: var(--yellow);
+.get-demo__element__icon--yellow {
+  color: var(--yellow);
 }
 .get-demo__element__text--purple,
-.get-demo__element__icon--purple{
-    color: var(--purple);
+.get-demo__element__icon--purple {
+  color: var(--purple);
 }
 /* / texts */
 /* ---- / Colors ---- */
 
 /* ---------------- / GET DEMO ---------------- */
+/* ---------------- PLANNING ---------------- */
+.planning{
+    padding: var(--mobile-standard-padding);
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    gap: var(--mobile-gap);
+}
+.planning *{
+    color: white;
+}
+.planning__element{
+    border-radius: 25px;
+}
+.planning__element--white-bg{
+    background-color: white;
+    padding: var(--mobile-standard-padding);
+    text-align: center;
+}
+.planning__element--white-bg *{
+    color: var(--grey);
+}
+.planning__element__img{
+    width: 100%;
+    padding: 16px;
+    margin: 24px 0;
+}
+.planning__element__title{
+    margin: 16px 0;
+}
+.planning__element__text{
+    font-size: var(--mobile-text-size);
+    line-height: var(--mobile-line-hight);
+}
+.planning__element__text--italic{
+    font-style: italic;
+}
+.planning__element__btn{
+    background-color: var(--light-purple);
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+}
+/* ---------------- / PLANNING ---------------- */
+
