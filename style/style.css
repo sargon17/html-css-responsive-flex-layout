@@ -41,6 +41,9 @@ a {
 .source * {
   font-size: 0.6rem;
 }
+.relative{
+    position: relative;
+}
 /* ---- Colors ---- */
 /* buttons */
 .get-demo__element__button--blue-bg {
@@ -239,6 +242,7 @@ header * {
 .benefit {
   background-color: var(--purple);
   padding: var(--mobile-standard-padding);
+
 }
 .benefit__title {
   color: white;
@@ -250,6 +254,7 @@ header * {
   display: flex;
   flex-direction: column;
   gap: var(--mobile-gap);
+  margin-bottom: 34px;
 }
 .benefit__element {
   background-color: var(--transparent-white);
@@ -274,3 +279,44 @@ header * {
     line-height: 1em;
     }
 /* ---------------- / BENEFIT ---------------- */
+/* ---------------- ABOUT-US ---------------- */
+.about-us{
+    margin: 24px 0;
+    padding: var(--mobile-standard-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--mobile-gap);
+}
+.about-us__content__title{
+    color: var(--purple);
+    font-size: 1.6rem;
+}
+.about-us__content__text{
+    font-size: var(--mobile-text-size);
+    line-height: 1.5rem;
+    margin: 24px 0;
+}
+.about-us__front-man__img-wrapper{
+    width: 70%;
+}
+
+.about-us__front-man__quote{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5rem;
+    color: var(--purple);
+}
+.about-us__front-man__img{
+    width: 100%;
+    border-radius: 50%;
+}
+.about-us__front-man__text{
+    color: var(--purple);
+    font-size: 1.1rem;
+}
+.about-us__front-man__button{
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+/* ---------------- / ABOUT-US ---------------- */
