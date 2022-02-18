@@ -26,9 +26,14 @@ button{
     border-radius: 50px;
     color: white;
     margin: 1rem 0;
+    cursor: pointer;
+
 }
 button *{
     color: white;
+}
+a{
+    text-decoration: underline;
 }
 /* ---------------- Generic Stiles ---------------- */
 
@@ -48,18 +53,30 @@ header *{
     margin: 0;
     margin-right: -16px;
     background-color: transparent;
-    cursor: pointer;
 }
 /* ---------------- / Header ---------------- */
 /* ---------------- GET DEMO ---------------- */
 .get-demo{
     padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
 }
 .get-demo__element{
     width: 100%;
     border-radius: 15px;
     padding: var(--mobile-standard-padding);
+    overflow: hidden;
 }
+.get-demo__element--text-align-left{
+    text-align: left;
+}
+
+.get-demo__element__icon{
+    font-size: 5em;
+}
+
 .get-demo__element__title{
     font-size: 1.2em;
     margin: 1rem 0;
@@ -72,24 +89,63 @@ header *{
     width: 80%;
 }
 .get-demo__element__img--half-height{
-    margin-bottom: -50%;
+    margin-bottom: -16px;
+}
+.get-demo__source,
+.get-demo__source *{
+    font-size: .6rem;
 }
 
 
 
+
+/* ---- Colors ---- */
+/* buttons */
 .get-demo__element__button--blue-bg{
     background-color: var(--blue);
 }
+/* / buttons */
 
-
+/* backgrounds */
 .get-demo__element--light-blue-bg{
     background-color: var(--light-blue);
 }
+.get-demo__element--light-green-bg{
+    background-color: var(--light-green);
+}
+.get-demo__element--light-red-bg{
+    background-color: var(--light-red);
+}
+.get-demo__element--light-yellow-bg{
+    background-color: var(--light-yellow);
+}
+.get-demo__element--light-purple-bg{
+    background-color: var(--light-purple);
+}
+/* / backgrounds */
 
 
-
+/* texts */
 .get-demo__element__text--blue{
     color: var(--blue);
 }
+.get-demo__element__text--green,
+.get-demo__element__icon--green{
+    color: var(--green);
+}
+.get-demo__element__text--red,
+.get-demo__element__icon--red{
+    color: var(--red);
+}
+.get-demo__element__text--yellow,
+.get-demo__element__icon--yellow{
+    color: var(--yellow);
+}
+.get-demo__element__text--purple,
+.get-demo__element__icon--purple{
+    color: var(--purple);
+}
+/* / texts */
+/* ---- / Colors ---- */
 
 /* ---------------- / GET DEMO ---------------- */
