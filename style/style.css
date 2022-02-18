@@ -20,6 +20,8 @@
   --line-hight: 1.2rem;
   --gap: 16px;
 
+
+  --desktop-width: 1000px;
 }
 
 /* ---------------- Generic Stiles ---------------- */
@@ -103,12 +105,33 @@ a {
 header {
   background-color: var(--blue);
   padding: var(--standard-padding);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.header{
+    max-width: var(--desktop-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 header * {
   color: white;
+}
+.header__nav{
+    display: none;
+}
+.header__nav ul{
+    display: flex;
+}
+.header__nav__link{
+    font-size: 0.8em;
+    padding: 0.5em 1.25em;
+    text-decoration: none;
+}
+.header__nav__link--btn{
+    background-color: white;
+    color: var(--grey);
+    border-radius: 25px;
 }
 .header__menu-bars {
   padding: var(--standard-padding);
@@ -123,6 +146,8 @@ header * {
   margin: 24px 0;
 }
 .get-demo {
+    max-width: var(--desktop-width);
+    margin: auto;
   padding: 32px 16px;
   display: flex;
   gap: var(--gap);
@@ -154,7 +179,8 @@ header * {
   width: 80%;
 }
 .get-demo__element__img--half-height {
-  margin-bottom: -16px;
+  margin-bottom: -50px;
+  object-fit: contain;
 }
 .source,
 .source * {
@@ -168,12 +194,16 @@ header * {
   padding: var(--standard-padding);
   padding-bottom: 24px;
   background-color: var(--purple);
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
 }
 .planning * {
-  color: white;
+    color: white;
+}
+.planning__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    max-width: var(--desktop-width);
+    margin: auto;
 }
 .planning__element {
   border-radius: 25px;
@@ -211,10 +241,15 @@ header * {
 .testimonial {
   padding: var(--standard-padding);
   margin: 24px 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
   text-align: center;
+}
+.testimonial__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    max-width: var(--desktop-width);
+    margin: auto;
+
 }
 .testimonial__element {
   border-radius: 15px;
@@ -261,6 +296,8 @@ header * {
   flex-wrap: wrap;
   gap: var(--gap);
   margin-bottom: 34px;
+  max-width: var(--desktop-width);
+  margin: auto;
 }
 .benefit__element {
   background-color: var(--transparent-white);
@@ -288,10 +325,15 @@ header * {
 /* ---------------- ABOUT-US ---------------- */
 .about-us {
   margin: 24px 0;
-  padding: var(--standard-padding);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
+}
+.about-us__wrapper{
+    padding: var(--standard-padding);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    max-width: var(--desktop-width);
+    margin: auto;
+    
 }
 .about-us__content__title {
   color: var(--purple);
@@ -336,9 +378,13 @@ footer * {
   margin: 24px 0;
 }
 .footer__get-started {
-  padding: 34px 16px;
-  background-color: var(--purple);
-  color: white;
+    padding: 34px 16px;
+    background-color: var(--purple);
+    color: white;
+}
+.get-started__wrapper{
+    max-width: var(--desktop-width);
+    margin: auto;
 }
 .footer__get-started__subtitle {
   font-size: 0.5rem;
@@ -375,9 +421,6 @@ footer * {
 /* ---------------- / FOOTER ---------------- */
 
 @media only screen and (min-width: 600px) {
-  :root {
-    --text-size: 0.7rem;
-  }
   .get-demo {
     justify-content: space-between;
     gap: var(--gap);
@@ -387,15 +430,10 @@ footer * {
   }
   .get-demo__element--dubble {
     width: calc(((100% - var(--gap)) / 3) * 2);
-
-
-
   }
   .planning__element__title {
     font-size: 1.8rem;
   }
-
-
 
   .testimonial__element--flex {
     display: flex;
@@ -405,29 +443,52 @@ footer * {
     text-align: left;
   }
 
-
-  .benefit__element{
-      width: calc((100% - var(--gap)) / 2);
+  .benefit__element {
+    width: calc((100% - var(--gap)) / 2);
   }
 
-
-  .about-us{
-      flex-wrap: nowrap;
+  .about-us__wrapper {
+    flex-wrap: nowrap;
   }
-  .about-us__content{
-      flex-grow: 3;
+  .about-us__content {
+    flex-grow: 3;
   }
-  .about-us__front-man{
-      flex-grow: 2;
+  .about-us__front-man {
+    flex-grow: 2;
   }
-  .about-us__front-man__quote{
-      font-size: 2rem;
+  .about-us__front-man__quote {
+    font-size: 2rem;
   }
-  .about-us__front-man__text{
-      font-size: 0.9rem;
+  .about-us__front-man__text {
+    font-size: 0.9rem;
   }
   .about-us__front-man__button,
-  .about-us__front-man__button *{
-      font-size: 0.5rem;
+  .about-us__front-man__button * {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+    header{
+        padding: 24px 16px;
+    }
+    .header__nav{
+        display: block;
+    }
+    .header__menu-bars{
+        display: none;
+    }
+  .get-demo__element--flex {
+      display: flex;
+  }
+
+  .planning__element {
+    width: calc((100% - var(--gap)) / 2);
+  }
+  .planning__element--white-bg{
+      margin-top: 20%;
+  }
+
+  .benefit__element {
+    width: calc((100% - var(--gap) * 2) / 3);
   }
 }

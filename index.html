@@ -20,10 +20,22 @@
 
 <body>
     <header>
-        <h1 class="header__logo">logo</h1>
-        <button class="header__menu-bars">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="header">
+
+            <h1 class="header__logo">logo</h1>
+            <nav class="header__nav">
+                <ul>
+                    <li><a class="header__nav__link" href="">Planning</a></li>
+                    <li><a class="header__nav__link" href="">Testimonials</a></li>
+                    <li><a class="header__nav__link" href="">Features</a></li>
+                    <li><a class="header__nav__link" href="">About Us</a></li>
+                    <li><a class="header__nav__link header__nav__link--btn" href="">Get started</a></li>
+                </ul>
+            </nav>
+            <button class="header__menu-bars">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
     <main>
         <!-- GET DEMO SECTION -->
@@ -32,15 +44,19 @@
 
                 <!-- First square - blue -->
                 <div
-                    class="get-demo__element get-demo__element--light-blue-bg get-demo__element--text-align-left get-demo__element--dubble">
-                    <h2 class="get-demo__element__title get-demo__element__text--blue">Get a demo application</h2>
-                    <p class="get-demo__element__text get-demo__element__text--blue "> Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Quia delectus dolorum ullam beatae facere. Necessitatibus, beatae
-                        aspernatur</p>
-                    <button class="get-demo__element__button--blue-bg">
-                        <i class="fa-brands fa-apple"></i>
-                        App Store
-                    </button>
+                    class="get-demo__element get-demo__element--light-blue-bg get-demo__element--text-align-left get-demo__element--dubble get-demo__element--flex">
+                    <div>
+
+                        <h2 class="get-demo__element__title get-demo__element__text--blue">Get a demo application</h2>
+                        <p class="get-demo__element__text get-demo__element__text--blue "> Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Quia delectus dolorum ullam beatae facere. Necessitatibus,
+                            beatae
+                            aspernatur</p>
+                        <button class="get-demo__element__button--blue-bg">
+                            <i class="fa-brands fa-apple"></i>
+                            App Store
+                        </button>
+                    </div>
                     <img src="img/get-demo__element__img.png"
                         class="get-demo__element__img get-demo__element__img--half-height" alt="App screen">
                 </div>
@@ -88,28 +104,31 @@
         <!-- / GET DEMO SECTION -->
         <!-- PLANNING SECTION -->
         <section class="planning">
-            <!-- Planning First Element -->
-            <div class="planning__element">
-                <img src="img/undraw_proud_coder_re_exuy.svg" alt="proud coder" class="planning__element__img">
-                <h2 class="planning__element__title">Strategic Planning</h2>
-                <p class="planning__element__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                    veritatis a alias consequuntur quidem
-                    suscipit itaque exercitationem reprehenderit! Modi et corrupti a, quia voluptatibus ex dolores
-                    possimus aspernatur distinctio explicabo!</p>
-                <span class="source">Image from <a href="https://undraw.co/illustrations">undraw.co</a></span>
-            </div>
-            <!-- / Planning First Element -->
-            <!-- Planning Second Element -->
-            <div class="planning__element planning__element--white-bg">
-                <img src="img/undraw_programming_re_kg9v.svg" alt="proud coder" class="planning__element__img">
-                <h2 class="planning__element__title">App Development</h2>
-                <p class="planning__element__text planning__element__text--italic">Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit. Ad
-                    veritatis a alias consequuntur quidem
-                    suscipit itaque exercitationem reprehenderit!</p>
-                <button class="planning__element__btn">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </button>
+            <div class="planning__wrapper">
+
+                <!-- Planning First Element -->
+                <div class="planning__element">
+                    <img src="img/undraw_proud_coder_re_exuy.svg" alt="proud coder" class="planning__element__img">
+                    <h2 class="planning__element__title">Strategic Planning</h2>
+                    <p class="planning__element__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+                        veritatis a alias consequuntur quidem
+                        suscipit itaque exercitationem reprehenderit! Modi et corrupti a, quia voluptatibus ex dolores
+                        possimus aspernatur distinctio explicabo!</p>
+                    <span class="source">Image from <a href="https://undraw.co/illustrations">undraw.co</a></span>
+                </div>
+                <!-- / Planning First Element -->
+                <!-- Planning Second Element -->
+                <div class="planning__element planning__element--white-bg">
+                    <img src="img/undraw_programming_re_kg9v.svg" alt="proud coder" class="planning__element__img">
+                    <h2 class="planning__element__title">App Development</h2>
+                    <p class="planning__element__text planning__element__text--italic">Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Ad
+                        veritatis a alias consequuntur quidem
+                        suscipit itaque exercitationem reprehenderit!</p>
+                    <button class="planning__element__btn">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
             </div>
             <!-- / Planning second Element -->
         </section>
@@ -117,65 +136,76 @@
         <!-- TESTIMONIALS SECTION -->
         <section class="testimonial">
             <!-- Testimonial Intro -->
-            <div class="testimonial__element">
-                <h3 class="testimonial__element__subtitle">TESTIMONIALS</h3>
-                <h2 class="testimonial__element__title">We are committed expert partners</h2>
-                <p class="testimonial__element__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                    minus eaque vel rem velit odit harum ipsam eos dicta natus nostrum quo, ea sint iusto at autem omnis
-                    doloribus quasi.</p>
-            </div>
-            <!-- / Testimonial Intro -->
-            <!-- First Testimonial -->
-            <div class="testimonial__element testimonial__element--flex testimonial__element--red-bg testimonial__element--padding">
-                <img src="./img/Person 1.jpg" alt="person 1 photo" class="testimonial__element__photo">
-                <div>
+            <div class="testimonial__wrapper">
 
-                    <p class="testimonial__element__text">
-                        <i class="fa-solid fa-quote-left"></i>
-                        Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Debitis
+                <div class="testimonial__element">
+                    <h3 class="testimonial__element__subtitle">TESTIMONIALS</h3>
+                    <h2 class="testimonial__element__title">We are committed expert partners</h2>
+                    <p class="testimonial__element__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis
                         minus eaque vel rem velit odit harum ipsam eos dicta natus nostrum quo, ea sint iusto at autem
                         omnis
-                        doloribus quasi.
-                        <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <span class=" testimonial__element__name">YUNMING WANG</span>
+                        doloribus quasi.</p>
                 </div>
-            </div>
-            <!-- First Testimonial -->
-            <!-- Second Testimonial -->
-            <div class="testimonial__element testimonial__element--flex testimonial__element--yellow-bg testimonial__element--padding">
-                <img src="./img/Person 2.jpg" alt="person 1 photo" class="testimonial__element__photo">
-                <div>
+                <!-- / Testimonial Intro -->
+                <!-- First Testimonial -->
+                <div
+                    class="testimonial__element testimonial__element--flex testimonial__element--red-bg testimonial__element--padding">
+                    <img src="./img/Person 1.jpg" alt="person 1 photo" class="testimonial__element__photo">
+                    <div>
 
-                    <p class="testimonial__element__text">
-                        <i class="fa-solid fa-quote-left"></i>
-                        Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Debitis
-                        minus eaque vel rem velit odit harum ipsam eos dicta natus nostrum quo, ea sint iusto at autem
-                        omnis
-                        doloribus quasi.
-                        <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <span class=" testimonial__element__name">JULIAN WAN</span>
+                        <p class="testimonial__element__text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Debitis
+                            minus eaque vel rem velit odit harum ipsam eos dicta natus nostrum quo, ea sint iusto at
+                            autem
+                            omnis
+                            doloribus quasi.
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <span class=" testimonial__element__name">YUNMING WANG</span>
+                    </div>
                 </div>
-            </div>
-            <!-- Second Testimonial -->
-            <!-- Third Testimonial -->
-            <div class="testimonial__element testimonial__element--flex testimonial__element--green-bg testimonial__element--padding">
-                <img src="./img/Person 3.jpg" alt="person 1 photo" class="testimonial__element__photo">
-                <div>
+                <!-- First Testimonial -->
+                <!-- Second Testimonial -->
+                <div
+                    class="testimonial__element testimonial__element--flex testimonial__element--yellow-bg testimonial__element--padding">
+                    <img src="./img/Person 2.jpg" alt="person 1 photo" class="testimonial__element__photo">
+                    <div>
 
-                    <p class="testimonial__element__text">
-                        <i class="fa-solid fa-quote-left"></i>
-                        Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Debitis
-                        minus eaque vel rem velit odit harum ipsam eos dicta natus nostrum quo, ea sint iusto at autem
-                        omnis
-                        doloribus quasi.
-                        <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <span class=" testimonial__element__name">DARSHAN PATEL</span>
+                        <p class="testimonial__element__text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Debitis
+                            minus eaque vel rem velit odit harum ipsam eos dicta natus nostrum quo, ea sint iusto at
+                            autem
+                            omnis
+                            doloribus quasi.
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <span class=" testimonial__element__name">JULIAN WAN</span>
+                    </div>
+                </div>
+                <!-- Second Testimonial -->
+                <!-- Third Testimonial -->
+                <div
+                    class="testimonial__element testimonial__element--flex testimonial__element--green-bg testimonial__element--padding">
+                    <img src="./img/Person 3.jpg" alt="person 1 photo" class="testimonial__element__photo">
+                    <div>
+
+                        <p class="testimonial__element__text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Debitis
+                            minus eaque vel rem velit odit harum ipsam eos dicta natus nostrum quo, ea sint iusto at
+                            autem
+                            omnis
+                            doloribus quasi.
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <span class=" testimonial__element__name">DARSHAN PATEL</span>
+                    </div>
                 </div>
             </div>
             <!-- Third Testimonial -->
@@ -245,48 +275,63 @@
         <!-- / BENEFITS SECTION -->
         <!-- ABOUT US SECTION -->
         <section class="about-us">
-            <div class="about-us__content">
-                <h2 class="about-us__content__title">About Us</h2>
-                <p class="about-us__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nihil
-                    quam ducimus nostrum, facilis quisquam reiciendis, sit labore animi hic provident? Error incidunt
-                    temporibus, assumenda quaerat consequatur ullam ex maxime! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Libero, aperiam! Eaque voluptatibus sed fugiat? Ab quis eveniet id nesciunt
-                    obcaecati dolorem quasi? Esse distinctio dignissimos, maiores sint quibusdam soluta expedita?</p>
-                <p class="about-us__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nihil
-                    quam ducimus nostrum, facilis quisquam reiciendis, sit labore animi hic provident? Error incidunt
-                    temporibus, assumenda quaerat consequatur ullam ex maxime! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Libero, aperiam! Eaque voluptatibus sed fugiat? Ab quis eveniet id nesciunt
-                    obcaecati dolorem quasi? Esse distinctio dignissimos, maiores sint quibusdam soluta expedita?</p>
+            <div class="about-us__wrapper">
 
-                <span class="source">Image from <a
-                        href="https://unsplash.com/s/photos/person">unsplash.com</a></span>
+                <div class="about-us__content">
+                    <h2 class="about-us__content__title">About Us</h2>
+                    <p class="about-us__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                        nihil
+                        quam ducimus nostrum, facilis quisquam reiciendis, sit labore animi hic provident? Error
+                        incidunt
+                        temporibus, assumenda quaerat consequatur ullam ex maxime! Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Libero, aperiam! Eaque voluptatibus sed fugiat? Ab quis eveniet id nesciunt
+                        obcaecati dolorem quasi? Esse distinctio dignissimos, maiores sint quibusdam soluta expedita?
+                    </p>
+                    <p class="about-us__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                        nihil
+                        quam ducimus nostrum, facilis quisquam reiciendis, sit labore animi hic provident? Error
+                        incidunt
+                        temporibus, assumenda quaerat consequatur ullam ex maxime! Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Libero, aperiam! Eaque voluptatibus sed fugiat? Ab quis eveniet id nesciunt
+                        obcaecati dolorem quasi? Esse distinctio dignissimos, maiores sint quibusdam soluta expedita?
+                    </p>
 
-            </div>
-            <div class="about-us__front-man">
-                <div class="relative about-us__front-man__img-wrapper">
-                    <i class="fa-solid fa-quote-left about-us__front-man__quote"></i>
-                    <img src="./img/Person 4.jpg" alt="" class=" about-us__front-man__img">
+                    <span class="source">Image from <a
+                            href="https://unsplash.com/s/photos/person">unsplash.com</a></span>
+
                 </div>
-                <h3 class=" about-us__front-man__text">I help companies Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Magni, fugiat.</h3>
-                <button class="about-us__front-man__button">
-                    <i class="fa-brands fa-linkedin"></i>
-                    Find me on Linkedin
-                </button>
+                <div class="about-us__front-man">
+                    <div class="relative about-us__front-man__img-wrapper">
+                        <i class="fa-solid fa-quote-left about-us__front-man__quote"></i>
+                        <img src="./img/Person 4.jpg" alt="" class=" about-us__front-man__img">
+                    </div>
+                    <h3 class=" about-us__front-man__text">I help companies Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Magni, fugiat.</h3>
+                    <button class="about-us__front-man__button">
+                        <i class="fa-brands fa-linkedin"></i>
+                        Find me on Linkedin
+                    </button>
+                </div>
             </div>
         </section>
         <!-- / ABOUT US SECTION -->
         <!-- FOOTER -->
         <footer>
             <div class="footer__get-started">
-                <h3 class="footer__get-started__subtitle">GET STARTED</h3>
-                <h2 class="footer__get-started__feature">Simple, Transparent Pricing</h2>
-                <h2 class="footer__get-started__accent-text">It's Free</h2>
-                <p>We're still in beta and we will be for awhile. as we add more functionality, we'll look into other
-                    plans with more controls.</p>
-                <button class="footer__get-started__button">Get Started</button>
-                <p class="footer__get-started__copyright">Copyrights 2021 nicepage.com &bull; <a href="#">Terms of
-                        Service</a> &bull; <a href="#">Privacy Policy</a></p>
+                <div class="get-started__wrapper">
+
+                    <h3 class="footer__get-started__subtitle">GET STARTED</h3>
+                    <h2 class="footer__get-started__feature">Simple, Transparent Pricing</h2>
+                    <h2 class="footer__get-started__accent-text">It's Free</h2>
+                    <p>We're still in beta and we will be for awhile. as we add more functionality, we'll look into
+                        other
+                        plans with more controls.</p>
+                    <button class="footer__get-started__button">Get Started</button>
+                    <p class="footer__get-started__copyright">Copyrights 2021 nicepage.com &bull; <a href="#">Terms of
+                            Service</a> &bull; <a href="#">Privacy Policy</a></p>
+                </div>
             </div>
             <div class="footer__credits">
                 <p class="footer__credits__simple-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
