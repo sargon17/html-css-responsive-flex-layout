@@ -404,7 +404,30 @@ footer * {
     gap: 3%;
     text-align: left;
   }
+
+
   .benefit__element{
       width: calc((100% - var(--gap)) / 2);
+  }
+
+
+  .about-us{
+      flex-wrap: nowrap;
+  }
+  .about-us__content{
+      flex-grow: 3;
+  }
+  .about-us__front-man{
+      flex-grow: 2;
+  }
+  .about-us__front-man__quote{
+      font-size: 2rem;
+  }
+  .about-us__front-man__text{
+      font-size: 0.9rem;
+  }
+  .about-us__front-man__button,
+  .about-us__front-man__button *{
+      font-size: 0.5rem;
   }
 }
