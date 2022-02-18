@@ -12,6 +12,7 @@
   --light-yellow: #ffe7c3;
   --light-purple: #d5d4f4;
 
+  --transparent-white: rgba(250, 250, 250, 0.8);
   --text-grey: #484c4b;
 
   --mobile-standard-padding: 8px 16px;
@@ -21,8 +22,8 @@
 }
 
 /* ---------------- Generic Stiles ---------------- */
-*{
-    color: var(--text-grey);
+* {
+  color: var(--text-grey);
 }
 button {
   border-radius: 50px;
@@ -43,53 +44,53 @@ a {
 /* ---- Colors ---- */
 /* buttons */
 .get-demo__element__button--blue-bg {
-    background-color: var(--blue);
-  }
-  /* / buttons */
-  
-  /* backgrounds */
-  .get-demo__element--light-blue-bg {
-    background-color: var(--light-blue);
-  }
-  .get-demo__element--light-green-bg,
-  .testimonial__element--green-bg {
-    background-color: var(--light-green);
-  }
-  .get-demo__element--light-red-bg,
-  .testimonial__element--red-bg {
-    background-color: var(--light-red);
-  }
-  .get-demo__element--light-yellow-bg,
-  .testimonial__element--yellow-bg {
-    background-color: var(--light-yellow);
-  }
-  .get-demo__element--light-purple-bg {
-    background-color: var(--light-purple);
-  }
-  /* / backgrounds */
-  
-  /* texts */
-  .get-demo__element__text--blue {
-    color: var(--blue);
-  }
-  .get-demo__element__text--green,
-  .get-demo__element__icon--green {
-    color: var(--green);
-  }
-  .get-demo__element__text--red,
-  .get-demo__element__icon--red {
-    color: var(--red);
-  }
-  .get-demo__element__text--yellow,
-  .get-demo__element__icon--yellow {
-    color: var(--yellow);
-  }
-  .get-demo__element__text--purple,
-  .get-demo__element__icon--purple {
-    color: var(--purple);
-  }
-  /* / texts */
-  /* ---- / Colors ---- */
+  background-color: var(--blue);
+}
+/* / buttons */
+
+/* backgrounds */
+.get-demo__element--light-blue-bg {
+  background-color: var(--light-blue);
+}
+.get-demo__element--light-green-bg,
+.testimonial__element--green-bg {
+  background-color: var(--light-green);
+}
+.get-demo__element--light-red-bg,
+.testimonial__element--red-bg {
+  background-color: var(--light-red);
+}
+.get-demo__element--light-yellow-bg,
+.testimonial__element--yellow-bg {
+  background-color: var(--light-yellow);
+}
+.get-demo__element--light-purple-bg {
+  background-color: var(--light-purple);
+}
+/* / backgrounds */
+
+/* texts */
+.get-demo__element__text--blue {
+  color: var(--blue);
+}
+.get-demo__element__text--green,
+.get-demo__element__icon--green {
+  color: var(--green);
+}
+.get-demo__element__text--red,
+.get-demo__element__icon--red {
+  color: var(--red);
+}
+.get-demo__element__text--yellow,
+.get-demo__element__icon--yellow {
+  color: var(--yellow);
+}
+.get-demo__element__text--purple,
+.get-demo__element__icon--purple {
+  color: var(--purple);
+}
+/* / texts */
+/* ---- / Colors ---- */
 /* ---------------- Generic Stiles ---------------- */
 
 /* ---------------- Header ---------------- */
@@ -154,84 +155,122 @@ header * {
 
 /* ---------------- / GET DEMO ---------------- */
 /* ---------------- PLANNING ---------------- */
-.planning{
-    padding: var(--mobile-standard-padding);
-    padding-bottom: 24px ;
-    background-color: var(--purple);
-    display: flex;
-    flex-direction: column;
-    gap: var(--mobile-gap);
+.planning {
+  padding: var(--mobile-standard-padding);
+  padding-bottom: 24px;
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  gap: var(--mobile-gap);
 }
-.planning *{
-    color: white;
+.planning * {
+  color: white;
 }
-.planning__element{
-    border-radius: 25px;
+.planning__element {
+  border-radius: 25px;
 }
-.planning__element--white-bg{
-    background-color: white;
-    padding: var(--mobile-standard-padding);
-    text-align: center;
+.planning__element--white-bg {
+  background-color: white;
+  padding: var(--mobile-standard-padding);
+  text-align: center;
 }
-.planning__element--white-bg *{
-    color: var(--text-grey);
+.planning__element--white-bg * {
+  color: var(--text-grey);
 }
-.planning__element__img{
-    width: 100%;
-    padding: 16px;
-    margin: 24px 0;
+.planning__element__img {
+  width: 100%;
+  padding: 16px;
+  margin: 24px 0;
 }
-.planning__element__title{
-    margin: 16px 0;
+.planning__element__title {
+  margin: 16px 0;
 }
-.planning__element__text{
-    font-size: var(--mobile-text-size);
-    line-height: var(--mobile-line-hight);
+.planning__element__text {
+  font-size: var(--mobile-text-size);
+  line-height: var(--mobile-line-hight);
 }
-.planning__element__text--italic{
-    font-style: italic;
+.planning__element__text--italic {
+  font-style: italic;
 }
-.planning__element__btn{
-    background-color: var(--light-purple);
-    border-radius: 50%;
-    padding: 0.5rem 0.7rem;
+.planning__element__btn {
+  background-color: var(--light-purple);
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
 }
 /* ---------------- / PLANNING ---------------- */
 /* ---------------- TESTIMONIAL ---------------- */
-.testimonial{
-    padding: var(--mobile-standard-padding);
-    margin: 24px 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--mobile-gap);
-    text-align: center;
+.testimonial {
+  padding: var(--mobile-standard-padding);
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--mobile-gap);
+  text-align: center;
 }
-.testimonial__element{
-    border-radius: 15px;
+.testimonial__element {
+  border-radius: 15px;
 }
-.testimonial__element--padding{
-    padding: var(--mobile-gap);
+.testimonial__element--padding {
+  padding: var(--mobile-gap);
 }
-.testimonial__element__subtitle{
-    font-size: .6rem;
-    font-weight: 500;
+.testimonial__element__subtitle {
+  font-size: 0.6rem;
+  font-weight: 500;
 }
-.testimonial__element__title{
+.testimonial__element__title {
+  color: var(--purple);
+  margin: 16px 0;
+}
+.testimonial__element__photo {
+  width: 70%;
+  border-radius: 50%;
+}
+.testimonial__element__text {
+  font-size: var(--mobile-text-size);
+  line-height: var(--mobile-line-hight);
+}
+.testimonial__element__name {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 16px 0;
+}
+/* ---------------- / TESTIMONIAL ---------------- */
+/* ---------------- BENEFIT ---------------- */
+.benefit {
+  background-color: var(--purple);
+  padding: var(--mobile-standard-padding);
+}
+.benefit__title {
+  color: white;
+  text-align: center;
+  margin: 24px 0;
+  font-size: 1.2rem;
+}
+.benefit__elements {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mobile-gap);
+}
+.benefit__element {
+  background-color: var(--transparent-white);
+  border-radius: 15px;
+  padding: var(--mobile-standard-padding);
+}
+.benefit__element__number {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--purple);
+}
+.benefit__element__title{
+    margin: 1rem 0;
     color: var(--purple);
-    margin: 16px 0;
 }
-.testimonial__element__photo{
-    width: 70%;
-    border-radius: 50%;
-}
-.testimonial__element__text{
+.benefit__element__text{
     font-size: var(--mobile-text-size);
     line-height: var(--mobile-line-hight);
 }
-.testimonial__element__name{
-    font-weight: 600;
-    font-size: 0.8rem;
-    margin: 16px 0;
-}
-/* ---------------- / TESTIMONIAL ---------------- */
-
+.benefit__element__button{
+    background-color: var(--purple);
+    line-height: 1em;
+    }
+/* ---------------- / BENEFIT ---------------- */
