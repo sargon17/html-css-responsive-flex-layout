@@ -20,14 +20,13 @@
   --line-hight: 1.2rem;
   --gap: 16px;
 
-  --tablet-gap: 12px;
 }
 
 /* ---------------- Generic Stiles ---------------- */
 * {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text-grey);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 button {
   border-radius: 50px;
@@ -45,8 +44,8 @@ a {
 .source * {
   font-size: 0.6rem;
 }
-.relative{
-    position: relative;
+.relative {
+  position: relative;
 }
 /* ---- Colors ---- */
 /* buttons */
@@ -119,9 +118,9 @@ header * {
 }
 /* ---------------- / Header ---------------- */
 /* ---------------- GET DEMO ---------------- */
-.get-demo-wrapper{
-    text-align: center;
-    margin: 24px 0;
+.get-demo-wrapper {
+  text-align: center;
+  margin: 24px 0;
 }
 .get-demo {
   padding: 32px 16px;
@@ -232,7 +231,7 @@ header * {
   margin: 16px 0;
 }
 .testimonial__element__photo {
-    max-width: 200px;
+  max-width: 200px;
   width: 70%;
   border-radius: 50%;
 }
@@ -250,7 +249,6 @@ header * {
 .benefit {
   background-color: var(--purple);
   padding: var(--standard-padding);
-
 }
 .benefit__title {
   color: white;
@@ -260,7 +258,7 @@ header * {
 }
 .benefit__elements {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--gap);
   margin-bottom: 34px;
 }
@@ -274,133 +272,139 @@ header * {
   margin: 1rem 0;
   color: var(--purple);
 }
-.benefit__element__title{
-    margin: 1rem 0;
-    color: var(--purple);
+.benefit__element__title {
+  margin: 1rem 0;
+  color: var(--purple);
 }
-.benefit__element__text{
-    font-size: var(--text-size);
-    line-height: var(--line-hight);
+.benefit__element__text {
+  font-size: var(--text-size);
+  line-height: var(--line-hight);
 }
-.benefit__element__button{
-    background-color: var(--purple);
-    line-height: 1em;
-    }
+.benefit__element__button {
+  background-color: var(--purple);
+  line-height: 1em;
+}
 /* ---------------- / BENEFIT ---------------- */
 /* ---------------- ABOUT-US ---------------- */
-.about-us{
-    margin: 24px 0;
-    padding: var(--standard-padding);
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
+.about-us {
+  margin: 24px 0;
+  padding: var(--standard-padding);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
 }
-.about-us__content__title{
-    color: var(--purple);
-    font-size: 1.6rem;
+.about-us__content__title {
+  color: var(--purple);
+  font-size: 1.6rem;
 }
-.about-us__content__text{
-    font-size: var(--text-size);
-    line-height: 1.5rem;
-    margin: 24px 0;
+.about-us__content__text {
+  font-size: var(--text-size);
+  line-height: 1.5rem;
+  margin: 24px 0;
 }
-.about-us__front-man__img-wrapper{
-    width: 70%;
+.about-us__front-man__img-wrapper {
+  width: 70%;
 }
 
-.about-us__front-man__quote{
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 5rem;
-    color: var(--purple);
+.about-us__front-man__quote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 5rem;
+  color: var(--purple);
 }
-.about-us__front-man__img{
-    width: 100%;
-    border-radius: 50%;
+.about-us__front-man__img {
+  width: 100%;
+  border-radius: 50%;
 }
-.about-us__front-man__text{
-    color: var(--purple);
-    font-size: 1.1rem;
+.about-us__front-man__text {
+  color: var(--purple);
+  font-size: 1.1rem;
 }
-.about-us__front-man__button{
-    background-color: var(--purple);
-    border-radius: 5px;
+.about-us__front-man__button {
+  background-color: var(--purple);
+  border-radius: 5px;
 }
 /* ---------------- / ABOUT-US ---------------- */
 /* ---------------- FOOTER ---------------- */
-footer{
-    background-color: var(--grey);
-    text-align: center;
+footer {
+  background-color: var(--grey);
+  text-align: center;
 }
-footer *{
-    color: white;
-    margin: 24px 0;
+footer * {
+  color: white;
+  margin: 24px 0;
 }
-.footer__get-started{
-    padding: 34px 16px;
-    background-color: var(--purple);
-    color: white;
+.footer__get-started {
+  padding: 34px 16px;
+  background-color: var(--purple);
+  color: white;
 }
-.footer__get-started__subtitle{
-    font-size: .5rem;
-    font-weight: 400;
+.footer__get-started__subtitle {
+  font-size: 0.5rem;
+  font-weight: 400;
 }
-.footer__get-started__feature{
-    font-weight: 500 ;
+.footer__get-started__feature {
+  font-weight: 500;
 }
-.footer__get-started__accent-text{
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: var(--yellow);
+.footer__get-started__accent-text {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--yellow);
 }
-.footer__get-started__button{
-    color: var(--purple);
-    background-color: white;
-    padding: 1rem 3rem;
+.footer__get-started__button {
+  color: var(--purple);
+  background-color: white;
+  padding: 1rem 3rem;
 }
 .footer__get-started__copyright,
-.footer__get-started__copyright *{
-    font-size: var(--text-size);
+.footer__get-started__copyright * {
+  font-size: var(--text-size);
 }
 
-.footer__credits{
-    margin: 0;
-    padding: 34px 16px;
-    background-color: var(--grey);
+.footer__credits {
+  margin: 0;
+  padding: 34px 16px;
+  background-color: var(--grey);
 }
 .footer__credits__simple-text,
 .footer__credits__creator,
-.footer__credits__creator *{
-    font-size: var(--text-size);
+.footer__credits__creator * {
+  font-size: var(--text-size);
 }
 /* ---------------- / FOOTER ---------------- */
 
+@media only screen and (min-width: 600px) {
+  :root {
+    --text-size: 0.7rem;
+  }
+  .get-demo {
+    justify-content: space-between;
+    gap: var(--gap);
+  }
+  .get-demo__element {
+    width: calc((100% - (var(--gap) * 2)) / 3);
+  }
+  .get-demo__element--dubble {
+    width: calc(((100% - var(--gap)) / 3) * 2);
 
-@media only screen and (min-width: 600px){
-    :root{
-        --text-size: 0.7rem;
-    }
-    .get-demo{
-        justify-content: space-between;
-        gap: var(--tablet-gap);
 
-    }
-    .get-demo__element {
-        width: calc((100% - (var(--tablet-gap)*2)) / 3);
-      }
-      .get-demo__element--dubble{
-        width: calc(((100% - var(--tablet-gap)) / 3) * 2);
-      }
-      .planning__element__title {
-        font-size: 1.8rem;
-      }
-      .testimonial__element--flex {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 3%;
-          text-align: left;
-      }
 
+  }
+  .planning__element__title {
+    font-size: 1.8rem;
+  }
+
+
+
+  .testimonial__element--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    text-align: left;
+  }
+  .benefit__element{
+      width: calc((100% - var(--gap)) / 2);
+  }
 }
