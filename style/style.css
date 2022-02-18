@@ -15,12 +15,15 @@
   --text-grey: #484c4b;
 
   --mobile-standard-padding: 8px 16px;
-  --mobile-text-size: 0.8em;
+  --mobile-text-size: 0.7em;
   --mobile-line-hight: 1.2rem;
   --mobile-gap: 16px;
 }
 
 /* ---------------- Generic Stiles ---------------- */
+*{
+    color: var(--text-grey);
+}
 button {
   border-radius: 50px;
   color: white;
@@ -37,6 +40,56 @@ a {
 .source * {
   font-size: 0.6rem;
 }
+/* ---- Colors ---- */
+/* buttons */
+.get-demo__element__button--blue-bg {
+    background-color: var(--blue);
+  }
+  /* / buttons */
+  
+  /* backgrounds */
+  .get-demo__element--light-blue-bg {
+    background-color: var(--light-blue);
+  }
+  .get-demo__element--light-green-bg,
+  .testimonial__element--green-bg {
+    background-color: var(--light-green);
+  }
+  .get-demo__element--light-red-bg,
+  .testimonial__element--red-bg {
+    background-color: var(--light-red);
+  }
+  .get-demo__element--light-yellow-bg,
+  .testimonial__element--yellow-bg {
+    background-color: var(--light-yellow);
+  }
+  .get-demo__element--light-purple-bg {
+    background-color: var(--light-purple);
+  }
+  /* / backgrounds */
+  
+  /* texts */
+  .get-demo__element__text--blue {
+    color: var(--blue);
+  }
+  .get-demo__element__text--green,
+  .get-demo__element__icon--green {
+    color: var(--green);
+  }
+  .get-demo__element__text--red,
+  .get-demo__element__icon--red {
+    color: var(--red);
+  }
+  .get-demo__element__text--yellow,
+  .get-demo__element__icon--yellow {
+    color: var(--yellow);
+  }
+  .get-demo__element__text--purple,
+  .get-demo__element__icon--purple {
+    color: var(--purple);
+  }
+  /* / texts */
+  /* ---- / Colors ---- */
 /* ---------------- Generic Stiles ---------------- */
 
 /* ---------------- Header ---------------- */
@@ -96,60 +149,14 @@ header * {
 .source,
 .source * {
   font-size: 0.6rem;
+  margin: 16px 0;
 }
-
-/* ---- Colors ---- */
-/* buttons */
-.get-demo__element__button--blue-bg {
-  background-color: var(--blue);
-}
-/* / buttons */
-
-/* backgrounds */
-.get-demo__element--light-blue-bg {
-  background-color: var(--light-blue);
-}
-.get-demo__element--light-green-bg {
-  background-color: var(--light-green);
-}
-.get-demo__element--light-red-bg {
-  background-color: var(--light-red);
-}
-.get-demo__element--light-yellow-bg {
-  background-color: var(--light-yellow);
-}
-.get-demo__element--light-purple-bg {
-  background-color: var(--light-purple);
-}
-/* / backgrounds */
-
-/* texts */
-.get-demo__element__text--blue {
-  color: var(--blue);
-}
-.get-demo__element__text--green,
-.get-demo__element__icon--green {
-  color: var(--green);
-}
-.get-demo__element__text--red,
-.get-demo__element__icon--red {
-  color: var(--red);
-}
-.get-demo__element__text--yellow,
-.get-demo__element__icon--yellow {
-  color: var(--yellow);
-}
-.get-demo__element__text--purple,
-.get-demo__element__icon--purple {
-  color: var(--purple);
-}
-/* / texts */
-/* ---- / Colors ---- */
 
 /* ---------------- / GET DEMO ---------------- */
 /* ---------------- PLANNING ---------------- */
 .planning{
     padding: var(--mobile-standard-padding);
+    padding-bottom: 24px ;
     background-color: var(--purple);
     display: flex;
     flex-direction: column;
@@ -167,7 +174,7 @@ header * {
     text-align: center;
 }
 .planning__element--white-bg *{
-    color: var(--grey);
+    color: var(--text-grey);
 }
 .planning__element__img{
     width: 100%;
@@ -190,4 +197,41 @@ header * {
     padding: 0.5rem 0.7rem;
 }
 /* ---------------- / PLANNING ---------------- */
+/* ---------------- TESTIMONIAL ---------------- */
+.testimonial{
+    padding: var(--mobile-standard-padding);
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--mobile-gap);
+    text-align: center;
+}
+.testimonial__element{
+    border-radius: 15px;
+}
+.testimonial__element--padding{
+    padding: var(--mobile-gap);
+}
+.testimonial__element__subtitle{
+    font-size: .6rem;
+    font-weight: 500;
+}
+.testimonial__element__title{
+    color: var(--purple);
+    margin: 16px 0;
+}
+.testimonial__element__photo{
+    width: 70%;
+    border-radius: 50%;
+}
+.testimonial__element__text{
+    font-size: var(--mobile-text-size);
+    line-height: var(--mobile-line-hight);
+}
+.testimonial__element__name{
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 16px 0;
+}
+/* ---------------- / TESTIMONIAL ---------------- */
 
