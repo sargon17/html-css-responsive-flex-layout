@@ -28,7 +28,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   color: var(--text-grey);
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 button {
   border-radius: 50px;
