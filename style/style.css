@@ -1,0 +1,41 @@
+:root{
+    --blue: #0084fd;
+    --purple: #9692e6;
+    --yellow: #f9c474;
+    --grey: #333333;
+    
+    --light-blue: #b9ddff;
+    --light-green: #caf0db;
+    --light-red: #fed2d1;
+    --light-yellow: #ffe7c3;
+    --light-purple: #d5d4f4;
+
+    --text-grey: #484c4b;
+    
+    --mobile-standard-padding: 8px 16px;
+
+}
+
+
+/* ---------------- Header ---------------- */
+header{
+    background-color: var(--blue);
+    padding: var(--mobile-standard-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header *{
+    color: white;
+}
+.header__menu-bars{
+    padding: var(--mobile-standard-padding);
+    /* padding-right: 0; */
+    margin-right: -16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/* ---------------- / Header ---------------- */
